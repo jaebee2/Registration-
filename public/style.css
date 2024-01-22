@@ -1,4 +1,233 @@
-p {
-  padding: 10px;
-  background-color: #ffaaff;
+/* Reset some default styles and set a base font size */
+body, h1, h2, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    background-color:black;
+    color: #343a40;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for centering content */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    color: wheat;
+    margin-bottom: 20px;
+  }
+  
+ 
+
+  
+  a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  /* Form styling */
+  form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: wheat; /* Form background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design for mobile */
+  @media only screen and (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+    div{
+        padding: 15px;
+    }
+  }
+  /* style.css */
+
+  #registrationForm{
+    border: 5px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: wheat;
+    width: 20%;
+    display: block;
+    text-align: center;
+    /* Add more styles as needed */
+  }
+ section{
+  background-color: antiquewhite;
+ }
+div img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    border-radius: 5px; /* Add rounded corners to images */
+    margin-bottom: 10px;
+  
+    padding-top: 5px;
+    /* Add more styles as needed */
+  }
+  
+  .d{
+    border: 5px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: wheat;
+    width: 100%;
+    display: block;
+ }
+ .header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(COVER.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+ul{
+  background-color: antiquewhite;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: grid;
+  column-count: 4;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+}
+
+nav{
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 135px;
+  padding: 5px;
+  background: #f0f0f0;
+  border-radius: 15px 50px 30px 5px;
+  padding-bottom: 5px;
+
+  
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: .5s;    
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+nav .fa{
+  display: none;
+}
+
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 62px;
+}
+.text-box p{
+  margin: 20px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+p{
+  border: black;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.hero-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
 }

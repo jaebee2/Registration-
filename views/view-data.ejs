@@ -1,0 +1,40 @@
+<!-- views/view-data.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Data</title>
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+  <h1>Student Database</h1>
+
+ <div class="record">
+  <ul>
+    <% data.forEach(record => { %>
+     
+       <p> <strong>Reg Number:</strong> <%= record.regNumber %><br>
+        <strong>Name:</strong> <%= record.name %><br>
+        <strong>Class:</strong> <%= record.year %><br>
+        <strong>Section:</strong> <%= record.section %><br>
+        <strong>Address:</strong> <%= record.address %><br>
+        <strong>Date of Birth:</strong> <%= record.dob %><br>
+        <strong>State:</strong> <%= record.state %><br>
+        <strong>Next of Kin:</strong> <%= record.nextOfKin %><br>
+        <strong>Father's Phone:</strong> <%= record.fatherPhone %><br>
+        <strong>Mother's Phone:</strong> <%= record.motherPhone %><br>
+        <strong>Entry Date:</strong> <%= record.entryDate %><br>
+        <strong>Exit Date:</strong> <%= record.exitDate %><br>
+
+        <!-- Add other fields as needed -->
+
+        <!-- Display Image -->
+        <img src="<%= record.image64 %>" alt="Captured Image" style="max-width: 300px; max-height: 300px;">
+       </p>  
+  
+    <% }); %>
+  </ul>
+ </div>
+</body>
+</html>
